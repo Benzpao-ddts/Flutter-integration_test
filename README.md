@@ -15,3 +15,4 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 # Flutter-integration_test
+To run the test on the iOS simulator, navigate to integration_test/app_test.dart, then right-click and choose 'Run Tests in Current File'.
