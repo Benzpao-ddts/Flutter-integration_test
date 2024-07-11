@@ -98,9 +98,6 @@ testWidgets('TC002 - Verify System Operation by Adding a Task with an Empty Name
       await tester.pumpAndSettle();
     }
 
-    // Verify that all tasks are displayed
-    // await verifyNumberOfTasks(tester, 20);
-
     String taskOne = 'Task 1'; 
     String lastTask = 'Task 19'; 
     // Mark the checkbox of the first task as completed
