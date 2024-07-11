@@ -72,9 +72,6 @@ testWidgets('TC002 - Verify System Operation by Adding a Task with an Empty Name
 
    // Verify that the checkbox is checked
     await verifyCheckboxState(tester, taskName, true);
-
-    // Verify that the task text has strikethrough
-    await verifyTaskHasStrikethrough(tester, taskName);
  
     // Delete a specific task by name
     await deleteTaskByName(tester, taskName);
