@@ -185,7 +185,7 @@ Future<void> deleteTaskByName(WidgetTester tester, String taskName) async {
   // Find the IconButton (delete button) inside the TaskTile
   final Finder deleteButtonFinder = find.descendant(
     of: taskTileFinder,
-    matching: find.byIcon(Icons.delete), // Replace with your actual delete button icon
+    matching: find.byIcon(Icons.delete), 
   );
   expect(deleteButtonFinder, findsOneWidget);
 
