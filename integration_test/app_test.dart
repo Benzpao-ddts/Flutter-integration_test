@@ -98,9 +98,6 @@ testWidgets('TC002 - Verify System Operation by Adding a Task with an Empty Name
       await tester.pumpAndSettle();
     }
 
-    // Verify that all tasks are displayed
-    // await verifyNumberOfTasks(tester, 20);
-
     String taskOne = 'Task 1'; 
     String lastTask = 'Task 19'; 
     // Mark the checkbox of the first task as completed
@@ -188,7 +185,7 @@ Future<void> deleteTaskByName(WidgetTester tester, String taskName) async {
   // Find the IconButton (delete button) inside the TaskTile
   final Finder deleteButtonFinder = find.descendant(
     of: taskTileFinder,
-    matching: find.byIcon(Icons.delete), // Replace with your actual delete button icon
+    matching: find.byIcon(Icons.delete), 
   );
   expect(deleteButtonFinder, findsOneWidget);
 
